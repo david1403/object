@@ -9,4 +9,9 @@ public class NoneDiscountPolicy extends DiscountPolicy {
     protected Money getDiscountAmount(Screening screening) {
         return Money.ZERO;
     }
+
+    @Override
+    public Money calculateDiscountAmount(Screening  screening) {
+        return Money.ZERO;
+    }
 }
